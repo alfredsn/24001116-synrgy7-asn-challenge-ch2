@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="cornsilk">#FFFFF8DC</color>
+    <color name="blanched_almond">#FFFFEBCD</color>
+    <color name="bisque">#FFFFE4C4</color>
+    <color name="navajo_white">#FFFFDEAD</color>
+    <color name="wheat">#FFF5DEB3</color>
+    <color name="ivory">#FFFFFFF0</color>
+    <color name="honeydew">#FFF0FFF0</color>
+    <color name="mint_cream">#FFF5FFFA</color>
+
+    <color name="celeste">#FFAEF3E7</color>
+    <color name="non_photo_blue">#FF8EE3EF</color>
+    <color name="cerulean">#FF37718E</color>
+    <color name="indigo_dye">#FF254E70</color>
+    <color name="cambridge_blue">#FF87B6A7</color>
+    <color name="rose_red">#FFC33C54</color>
+    <color name="atomic_tangerine">#FFF79F79</color>
+</resources>
