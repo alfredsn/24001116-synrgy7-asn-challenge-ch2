@@ -8,16 +8,28 @@
         android:id="@+id/tb_first"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:outlineAmbientShadowColor="@color/sadle_brown"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_calculate_tip">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/logo_tip_hublaa"
+            android:layout_margin="4dp"
+            app:shapeAppearance="@color/cambridge_blue"/>
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
             android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:textColor="?attr/colorSecondary"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
 
     </com.google.android.material.appbar.MaterialToolbar>
 
@@ -73,52 +85,47 @@
         android:id="@+id/cg_tip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:foregroundGravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_tip_now"
-        app:layout_constraintBottom_toTopOf="@id/btn_custom">
+        app:layout_constraintBottom_toTopOf="@id/sm_round_up_tip">
 
-        <com.google.android.material.chip.Chip
+        <com.google.android.material.chip.Chip style="@style/Widget.App.Chip"
             android:id="@+id/chip_10"
-            style="@style/Widget.Material3.Chip.Suggestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="@string/_10"
             android:gravity="center"/>
 
-        <com.google.android.material.chip.Chip
+        <com.google.android.material.chip.Chip style="@style/Widget.App.Chip"
             android:id="@+id/chip_15"
-            style="@style/Widget.Material3.Chip.Suggestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="@string/_15"
             android:gravity="center"/>
 
-        <com.google.android.material.chip.Chip
+        <com.google.android.material.chip.Chip style="@style/Widget.App.Chip"
             android:id="@+id/chip_25"
-            style="@style/Widget.Material3.Chip.Suggestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="@string/_25"
             android:gravity="center"/>
 
-        <com.google.android.material.chip.Chip
+        <com.google.android.material.chip.Chip style="@style/Widget.App.Chip"
             android:id="@+id/chip_35"
-            style="@style/Widget.Material3.Chip.Suggestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="@string/_35"
             android:gravity="center"/>
 
-        <com.google.android.material.chip.Chip
+        <com.google.android.material.chip.Chip style="@style/Widget.App.Chip"
             android:id="@+id/chip_50"
-            style="@style/Widget.Material3.Chip.Suggestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
@@ -127,38 +134,25 @@
 
     </com.google.android.material.chip.ChipGroup>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_custom"
-        style="@style/Widget.Material3.Button.OutlinedButton"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:text="@string/custom_tip"
-        android:gravity="center"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cg_tip"
-        app:layout_constraintBottom_toTopOf="@id/sm_round_up_tip"/>
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
+    <com.google.android.material.switchmaterial.SwitchMaterial style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
         android:id="@+id/sm_round_up_tip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/round_up_tip"
         android:textStyle="bold"
         android:gravity="center_vertical"
-        android:layout_margin="8dp"
         android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
         android:elevation="20dp"
-        style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
-        app:layout_constraintTop_toBottomOf="@id/btn_custom"
+        app:layout_constraintTop_toBottomOf="@id/cg_tip"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_calculate"/>
 
-    <com.google.android.material.button.MaterialButton
+    <com.google.android.material.button.MaterialButton style="@style/Widget.Material3.Button.OutlinedButton"
         android:id="@+id/btn_calculate"
-        style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calculate"
@@ -166,7 +160,9 @@
         android:layout_marginTop="18dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:textColor="@color/black"
+        android:textColor="?attr/colorSecondary"
+        android:backgroundTint="?attr/colorPrimary"
+        android:backgroundTintMode="add"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sm_round_up_tip"/>
@@ -175,7 +171,9 @@
         android:id="@+id/til_summary_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_calculate"
@@ -195,13 +193,19 @@
             android:hint="@string/tip"
             android:textSize="16sp"/>
 
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/total"
             android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:layout_margin="4dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -209,7 +213,9 @@
         android:id="@+id/til_summary_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:padding="12dp"
         android:gravity="end"
         app:layout_constraintEnd_toEndOf="parent"
@@ -230,13 +236,19 @@
             android:hint="@string/_0_00"
             android:textSize="16sp"/>
 
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_total_cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_0_00"
             android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 

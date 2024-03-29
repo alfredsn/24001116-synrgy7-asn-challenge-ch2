@@ -15,12 +15,18 @@
     <color name="ivory">#FFFFFFF0</color>
     <color name="honeydew">#FFF0FFF0</color>
     <color name="mint_cream">#FFF5FFFA</color>
-
+    <color name="white_smoke">#FFEEF0EE</color>
+    <color name="alice_blue">#E2F3F8</color>
     <color name="celeste">#FFAEF3E7</color>
     <color name="non_photo_blue">#FF8EE3EF</color>
+    <color name="sky_blue">#4AB2A2</color>
     <color name="cerulean">#FF37718E</color>
-    <color name="indigo_dye">#FF254E70</color>
     <color name="cambridge_blue">#FF87B6A7</color>
     <color name="rose_red">#FFC33C54</color>
     <color name="atomic_tangerine">#FFF79F79</color>
+    <color name="indigo_dye">#254E70</color>
+    <color name="dark_slate_gray">#336666</color>
+    <color name="sadle_brown">#704725</color>
+    <color name="chest_nut">#702529</color>
+    <color name="palm_green">#141A19</color>
 </resources>

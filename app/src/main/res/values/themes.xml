@@ -1,9 +1,42 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.TipHublaa" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:colorBackground">@color/white_smoke</item>
+
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/dark_slate_gray</item>
+        <item name="colorPrimaryContainer">@color/dark_slate_gray</item>
+        <item name="colorPrimaryVariant">@color/dark_slate_gray</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/ivory</item>
+        <item name="colorOnSecondary">@color/alice_blue</item>
+        <item name="colorSecondaryContainer">@color/alice_blue</item>
+        <item name="colorOnSecondaryContainer">@color/dark_slate_gray</item>
+        <item name="colorSecondaryVariant">@color/dark_slate_gray</item>
+
+        <!-- Tertiary brand color -->
+        <item name="colorTertiary">@color/dark_slate_gray</item>
+        <item name="colorOnTertiary">@color/dark_slate_gray</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize theme -->
+        <item name="android:textColor">@color/dark_slate_gray</item>
+        <item name="hintTextColor">@color/dark_slate_gray</item>
+        <item name="backgroundTint">@color/alice_blue</item>
+        <item name="colorOnSurface">@color/dark_slate_gray</item>
     </style>
 
+    <!--Customize chip-->
+    <style name="Widget.App.Chip" parent="Widget.Material3.Chip.Suggestion">
+        <item name="android:textColor">@color/ivory</item>
+        <item name="chipStrokeWidth">2dp</item>
+        <item name="chipStrokeColor">@color/alice_blue</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipBackgroundColor">@color/dark_slate_gray</item>
+    </style>
     <style name="Theme.TipHublaa" parent="Base.Theme.TipHublaa" />
 </resources>

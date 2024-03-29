@@ -1,7 +1,41 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.TipHublaa" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <item name="android:colorBackground">@color/palm_green</item>
+
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/ivory</item>
+        <item name="colorPrimaryContainer">@color/ivory</item>
+        <item name="colorPrimaryVariant">@color/ivory</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/palm_green</item>
+        <item name="colorOnSecondary">@color/celeste</item>
+        <item name="colorSecondaryContainer">@color/celeste</item>
+        <item name="colorOnSecondaryContainer">@color/ivory</item>
+        <item name="colorSecondaryVariant">@color/ivory</item>
+
+        <!-- Tertiary brand color -->
+        <item name="colorTertiary">@color/ivory</item>
+        <item name="colorOnTertiary">@color/ivory</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize theme -->
+        <item name="android:textColor">@color/ivory</item>
+        <item name="hintTextColor">@color/ivory</item>
+        <item name="backgroundTint">@color/celeste</item>
+        <item name="colorOnSurface">@color/ivory</item>
+    </style>
+
+    <!--Customize chip-->
+    <style name="Widget.App.Chip" parent="Widget.Material3.Chip.Suggestion">
+        <item name="android:textColor">@color/palm_green</item>
+        <item name="chipStrokeWidth">2dp</item>
+        <item name="chipStrokeColor">@color/palm_green</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipBackgroundColor">@color/ivory</item>
     </style>
 </resources>
