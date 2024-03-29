@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tip Hublaa</string>
+    <string name="choose_tip">Pilih tip</string>
+    <string name="cost_of_service">Biaya Layanan</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="_15">15%</string>
+    <string name="_25">25%</string>
+    <string name="_50">50%</string>
+    <string name="_40">40%</string>
+    <string name="split_by">Bagi dengan</string>
+    <string name="amount_of_people">Masukkan Jumlah orang</string>
+    <string name="total_amount">Jumlah total</string>
+    <string name="tip_now">Tip Sekarang</string>
+    <string name="_10">10%</string>
+    <string name="_35">35%</string>
+    <string name="custom_tip">Tip Kustom</string>
+    <string name="round_up_tip">Pembulatan Tip</string>
+    <string name="calculate">Hitung</string>
+    <string name="calculate_tip">Hitung Tip</string>
+    <string name="bill_total">Total tagihan</string>
+    <string name="base">Dasar</string>
+    <string name="tip">Tip</string>
+    <string name="total">Total</string>
+    <string name="_0_00">0.00,-</string>
+</resources>
